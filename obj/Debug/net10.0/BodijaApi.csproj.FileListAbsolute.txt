@@ -122,3 +122,4 @@ C:\Users\verifier\Documents\vscode\DotnetWep\BodijaApi\obj\Debug\net10.0\refint\
 C:\Users\verifier\Documents\vscode\DotnetWep\BodijaApi\obj\Debug\net10.0\BodijaApi.pdb
 C:\Users\verifier\Documents\vscode\DotnetWep\BodijaApi\obj\Debug\net10.0\BodijaApi.genruntimeconfig.cache
 C:\Users\verifier\Documents\vscode\DotnetWep\BodijaApi\obj\Debug\net10.0\ref\BodijaApi.dll
+C:\Users\verifier\Documents\vscode\DotnetWep\BodijaApi\obj\Debug\net10.0\BodijaApi.sourcelink.json

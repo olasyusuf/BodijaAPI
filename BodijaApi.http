@@ -1,6 +1,6 @@
 @BodijaApi_HostAddress = http://localhost:5116
 
-GET {{BodijaApi_HostAddress}}/weatherforecast/
+GET {{BodijaApi_HostAddress}}/orders/
 Accept: application/json
 
 ###
