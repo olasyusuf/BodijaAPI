@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BodijaApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5013dc8e317d6785dfaa913614f669daba8658da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c754ea0a44840d7b8b70edfbd9781f1469e666a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BodijaApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BodijaApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
