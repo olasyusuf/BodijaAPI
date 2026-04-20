@@ -150,4 +150,40 @@ public class PurchaseOrdersController : ControllerBase
         return Ok(order.PurchaseOrderNumber);
     }
 
+    // PUT: api/order/{id}
+    [HttpDelete("order/{id}")]
+    public async Task<IActionResult> DeleteOrder(int id)
+    {
+
+        var order = await GetPurchaseOrdersQuery()
+            .FirstOrDefaultAsync(o => o.Id == id);
+
+        if (order == null) 
+            return NotFound($"Order: {id} not found.");
+
+        if (order.ShippingAddress != null)
+           await  _context.Addresses.Where(a => a.Id == order.ShippingAddress.Id).ExecuteDeleteAsync();
+
+        if (order.BillingAddress != null)
+            await _context.Addresses.Where(a => a.Id == order.BillingAddress.Id).ExecuteDeleteAsync();
+
+        _context.RemoveRange(order.Items);
+        _context.Remove(order);
+
+        try
+        {
+            await _context.SaveChangesAsync();
+        }
+        catch
+        {
+            if(!_context.Orders.Any(e => e.Id == id))
+            {
+                return NotFound($"Order: {id} can not be deleted.");
+            }
+        }
+
+        return Ok(id);
+    }
+    
+
 }
